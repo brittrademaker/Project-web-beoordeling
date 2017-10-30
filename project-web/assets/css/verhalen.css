@@ -14,10 +14,6 @@
     font-style: normal;
 }
 
-html {
-    box-sizing: border-box;
-}
-
 body {
     background-color: #fff;
     color: #202020;
@@ -384,7 +380,6 @@ main {
 }
 
 .passie div img:nth-of-type(1) {
-    background-color: #000;
     display: block;
     padding-top: 5em;
     width: 100%;
@@ -395,7 +390,7 @@ main {
     display: none;
 }
 
-.passie div:last-child {
+.passie>div:last-child {
     background-color: #fff;
 }
 
@@ -434,7 +429,7 @@ div .onomatopee:active {
 /* stijloegening 88 Klumperbeven */
 
 .rotate {
-    outline: 0;
+    outline: none;
     -moz-transition-duration: 2s;
     -o-transition-duration: 2s;
     -webkit-transition-duration: 2s;
@@ -476,6 +471,32 @@ label[for=rotate-mobile] {
 
 label[for=rotate-tablet] {
     display: none;
+}
+
+nav ul li:nth-of-type(2) div {
+    background-image: url(../img/like.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 2em;
+    margin-top: 1.5em;
+    width: 2em;
+}
+
+nav ul li:nth-of-type(2) div:hover {
+    background-image: url(../img/liked.png);
+    -webkit-transition: all 1s ease-out;
+    -moz-transition: all 1s ease-out;
+    -o-transition: all 1s ease-out;
+    transition: all 1s ease-out;
+}
+
+.liked {
+    background-image: url(../img/liked.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 2em;
+    margin-top: 1.5em;
+    width: 2em;
 }
 
 
@@ -636,10 +657,7 @@ footer:last-child {
 }
 
 @media screen and (max-width: 50em) {
-
     /* stijloegening 58 de passie van Max */
-
-
     .passie div img:nth-of-type(2) {
         background-color: #000;
         display: block;
@@ -650,10 +668,7 @@ footer:last-child {
     .passie div img:nth-of-type(3) {
         display: none;
     }
-
     /* stijloegening 77 Onompatopee */
-
-
     div .onomatopee {
         background-image: url(../img/uitwerking-77-tablet.png);
         background-size: cover;
@@ -669,10 +684,7 @@ footer:last-child {
         -o-transition: all 0.5s ease-in-out;
         transition-timing-function: all 0.5s ease;
     }
-
     /* stijloegening 88 Klumperbeven */
-
-
     .klumperbeven>img:first-of-type {
         display: block;
     }
@@ -703,10 +715,7 @@ footer:last-child {
 }
 
 @media screen and (max-width: 30em) {
-
     /* stijloegening 58 de passie van Max */
-
-
     .passie div img:nth-of-type(3) {
         background-color: #000;
         display: block;
@@ -717,10 +726,7 @@ footer:last-child {
     .passie div img:nth-of-type(2) {
         display: none;
     }
-
     /* stijloegening 77 Onomatopee */
-
-
     div .onomatopee {
         background-image: url(../img/uitwerking-77-mobiel.png);
         background-size: cover;
@@ -737,10 +743,7 @@ footer:last-child {
         -o-transition: all 0.5s ease-in-out;
         transition-timing-function: all 0.5s ease;
     }
-
     /* stijloegening 88 Klumperbeven */
-
-
     .klumperbeven>img:last-child {
         display: block;
     }
@@ -756,10 +759,7 @@ footer:last-child {
     label[for=chkimage] {
         display: none;
     }
-
     /* navigatie mobiel */
-
-
     header nav ul {
         display: none;
         margin: 0;

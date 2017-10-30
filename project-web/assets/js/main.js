@@ -27,19 +27,28 @@ downloadButton.addEventListener('click', addOne);
 
 //silder filter micro interactie 2
 var slide = document.getElementById('slide');
-var sliderDiv = document.getElementById('sliderAmount');
+var sliderTijd = document.getElementById('sliderAmount');
 
 //slider formulier, semicolon omdat het een functions is die start met een is teken
 slide.onchange = function () {
-    sliderDiv.innerHTML = this.value;
+    sliderTijd.innerHTML = this.value;
 };
 
 
 //bewerken status verhaal micro interactie 3
-var kleurtje = document.querySelector('ul ul li');
+var editStatus = document.querySelector('ul ul li');
 
-function lezen() {
-    kleurtje.classList.toggle('aan-het-lezen');
+function opties() {
+    editStatus.classList.toggle('aan-het-lezen');
 }
 
-kleurtje.addEventListener('click', lezen);
+editStatus.addEventListener('click', opties);
+
+//liken van een stijloefening
+var like = document.querySelector('nav ul li:nth-of-type(2) div');
+
+function toevoegenLike() {
+    like.classList.toggle('liked');
+}
+
+like.addEventListener('click', toevoegenLike);
