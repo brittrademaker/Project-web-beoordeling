@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verhalen lijst</title>
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <!-- hoofdnavigatie -->
+    <header>
+        <a href="overzichtspagina.html">
+            <img src="assets/img/transavia-logo.png" alt="Transavia">
+            <h1>Transavia</h1>
+        </a>
+        <nav>
+            <input type="checkbox" id="menu-toggle"/>
+            <label for="menu-toggle"></label>
+            <ul>
+                <li><a href="#download">Downloads v</a>
+                   <ul id="download">
+                       <li><a href="#voorbeeld">Stijloefeningen (58) – De passie van Max</a></li>
+                       <li><a href="uitwerking88.html">Stijloefeningen (88) – Klumperbeven</a></li>
+                       <li><a href="uitwerking77.html">Stijloefeningen (77) – Onomatopee</a></li>
+                       <li><a href="#">Stijloefeningen (38) - Moe</a></li>
+                    </ul>
+                </li>
+                <li><a href="#likes">Likes v</a>
+                    <ul id="likes">
+                       <li><a href="uitwerking58.html">Stijloefeningen (58) – De passie van Max</a></li>
+                       <li><a href="uitwerking88.html">Stijloefeningen (88) – Klumperbeven</a></li>
+                       <li><a href="uitwerking77.html">Stijloefeningen (77) – Onomatopee</a></li>
+                       <li><a href="#">Stijloefeningen (38) - Moe</a></li>
+                    </ul>
+                </li>
+                <li><a href="#profiel">Profiel</a>
+                    <ul id="profiel">
+                       <li><a href="login.html">Loguit</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <main>
+       <section>
+            <aside>
+                <h2>Alle 99 verhalen</h2>
+            </aside>
+            <!-- filter/formulier -->
+            <form action="lijst.html">
+                <fieldset>
+                    <legend>Stel je eigen verhalenlijst samen</legend>
+                    <label for="slide">Hoelang zou je willen lezen?</label>
+                    <input id="slide" type="range" min="5" max="500" step="5" value="5">
+                    <div>
+                        <p id="sliderAmount">1</p>
+                        <p>oneindig</p>
+                    </div>
+                    <label for="plek">Waar zou je willen lezen?</label>
+                    <select id="plek">
+                        <option value="thuis">Thuis</option>
+                        <option value="onderweg">Onderweg naar het vliegveld</option>
+                        <option value="onderweg">Op het vliegveld</option>
+                        <option value="vliegtuig" selected>In het vliegtuig</option>
+                    </select>
+                    <label for="verband">Samenhang en verband</label>
+                    <select id="verband">
+                        <option value="temporeel">Temporele samenhang</option>
+                        <option value="chronlogisch">Chronoligsche samenhang</option>
+                        <option value="associatie" selected>Associatieve samenhang</option>
+                    </select>
+                    <label for="sorteer">Waarop zou je willen sorteren?</label>
+                    <select id="sorteer">
+                        <option value="likes">Meeste likes</option>
+                        <option value="kort">Kortste verhaal</option>
+                        <option value="lang">Langste verhaal</option>
+                        <option value="comments" selected>Meeste comments</option>
+                    </select>
+                    <button type="submit">Zoeken</button>
+                </fieldset>
+            </form>
+        </section>
+
+        <!-- uitkomst filter -->
+        <section>
+            <h3>Deze lijst hebben we voor je samengesteld:</h3>
+            <a href="#">Download de hele lijst</a>
+            <article>
+                <h4>Stijloefeningen (98) – Beroemd</h4>
+                <footer>
+                    <a href="">12 likes</a>
+                    <a href="">9 comments</a>
+                </footer>
+                <p>Vlak voordat ik de bus uitstap bedank ik de buschauffeur via de spiegel voor zijn diensten. Hij zwaait joviaal terug. ‘Mijn vrouw is een groot fan van u’, roept hij. ‘Doe haar de groeten’, zeg ik en stap uit. Centraal Station. Ik duw mijn zoon voort. Hij slaapt. Zich onbewust van de last die er...</p>
+                <a href="">Download</a> </article>
+            <article>
+                <h4>Stijloefeningen (75) – Kinderboek</h4>
+                <footer>
+                    <a href="">10 likes</a>
+                    <a href="">7 comments</a>
+                </footer>
+                <p>Kijk, daar gaat Max. Dag Max! Hij stapt uit de bus. Wat duwt hij daar vooruit? Jawel, een heuse kinderwagen! En wat voor één! Een groene! Zijn zoontje ligt er in te slapen. Die heeft gelukkig geen last van de kou. Want het is koud joh! Het regent een beetje en het waait flink. Alle...</p>
+                <a href="">Download</a> </article>
+            <article>
+                <h4>Stijloefeningen (38) – Moe</h4>
+                <footer>
+                    <a href="">6 likes</a>
+                    <a href="">2 comments</a>
+                </footer>
+                <p>De buschauffeur port me wakker. We zijn bij de eindhalte, Centraal Station. Ik stap uit en duw de kinderwagen voort waarin mijn zoon ligt te slapen. Ik wou dat ik hem was. De mensen lopen in zichzelf gekeerd over het plein. De regen doet z’n best mij wakker te houden, maar mijn oogleden voelen zwaar...</p>
+                <a href="">Download</a>
+            </article>
+            <article>
+                <h4>Stijloefeningen (57) - Paranoia</h4>
+                <footer>
+                    <a href="">13 likes</a>
+                    <a href="">7 comments</a>
+                </footer>
+                <p>Ik sluip de bus uit. Kop in de kraag. Ik maak me klein en duw m’n zoon vooruit. Hij slaapt. Eindelijk. Zijn gejengel trok veel te veel aandacht. De mensen lopen over het stationsplein. Het voelt alsof er een grote, knipperende pijl boven m’n hoofd hangt: HIER LOOPT HIJ! Gelukkig is het kloteweer en kijken […]</p>
+                <a href="">Download</a>
+            </article>
+        </section>
+
+     <section>
+            <h5>Weet je nog niet wat je zoekt?</h5>
+            <div>
+                <p>Stel je eigen verhalenlijst samen en lees verhalen die speciaal voor jou uitgekozen zijn. Download de verhalen die jouw interessant lijken of sla in een keer de gehele lijst op zodat je niets mist!
+                </p>
+            </div>
+            <a href="#">Stel verhalenlijst samen</a>
+        </section>
+
+        <section>
+            <h5>99 stijloefeningen voor onderweg</h5>
+            <div>
+                <p>Lees gedownloadde verhalen offline in het vliegtuig. Zo weet je zeker dat je je geen moment hoeft te vervelen op weg naar jouw droombestemming.</p>
+            </div>
+            <a href="#">Bekijk downloads</a>
+        </section>
+
+    </main>
+    <footer>
+        <a href="#">^</a>
+    </footer>
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>
