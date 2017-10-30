@@ -1,0 +1,77 @@
+@font-face {
+    font-family: 'Silom';
+    src: url('../font/Silom.eot');
+    src: url('../font/Silom.eot?#iefix') format('embedded-opentype'), url('../font/Silom.woff') format('woff'), url('../font/Silom.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    box-sizing: border-box;
+    font-size: 1em;
+}
+
+.onomatopee img {
+    height: 900px;
+
+}
+.onomatopee{
+    overflow-y: hidden;
+    overflow-x: scroll;
+}
+.klumperbeven {
+    display: block;
+    background-color: black;
+}
+
+.passie {
+    background-color: #000;
+
+}
+
+.passie article{
+     display: -webkit-flex;
+   display: flex;
+   -webkit-flex-direction: row;
+   flex-direction: row;
+   -webkit-justify-content: flex-start;
+   justify-content: flex-start;
+}
+.passie p{
+    font-family: Silom;
+    line-height: 1.5em;
+    padding:0 4em;
+    color: white;
+    column-count: 2;
+}
+.passie img {
+    background-image: url(../img/uitwerking-58-03.png);
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-top: 4em;
+}
+
+
+.rotate {
+    -webkit-transition-duration: 2s;
+    -moz-transition-duration: 2s;
+    -o-transition-duration: 2s;
+    transition-duration: 2s;
+    -webkit-transition-property: -webkit-transform;
+    -moz-transition-property: -moz-transform;
+    -o-transition-property: -o-transform;
+    transition-property: transform;
+    outline: 0;
+    width: 100%;
+}
+
+input[type=checkbox] {
+    display: none;
+}
+
+input[type=checkbox]:checked+label>img {
+    -webkit-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    transform: rotate(180deg);
+}

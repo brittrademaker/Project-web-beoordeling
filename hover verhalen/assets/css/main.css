@@ -1,0 +1,535 @@
+@font-face {
+    font-family: "Nexa bold";
+    src: url('../font/NexaBold.eot');
+    src: url('../font/NexaBold.eot?#iefix') format('embedded-opentype'), url('../font/NexaBold.woff') format('woff'), url('../font/NexaBold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Nexa light";
+    src: url('../font/NexaLight.eot');
+    src: url('../font/NexaLight.eot?#iefix') format('embedded-opentype'), url('../font/NexaLight.woff') format('woff'), url('../font/NexaLight.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+body {
+    background-color: #fff;
+    color: #202020;
+    font-family: Nexa bold;
+    font-size: 1.000em;
+    margin: 0 auto;
+
+    /* smooth transition */
+    transition:all .2s linear;
+    -o-transition:all .2s linear;
+    -moz-transition:all .2s linear;
+    -webkit-transition:all .2s linear;
+}
+
+/* typography */
+
+h1 {
+    color: #00d66c;
+    font-size: 1em;
+    margin-left: 0.5em;
+    margin-right: auto;
+    display: inline-block;
+}
+
+h2 {
+    color: #fff;
+}
+
+h3 {
+    color: #00d66c;
+    font-size: 2.375em;
+}
+
+h4 {
+    color: #2800a0;
+    font-size: 1.150em;
+}
+
+h5 {
+    color: #2800a0;
+    font-size: 2.375em;
+}
+
+p {
+    font-family: Nexa light;
+    line-height: 1.2em;
+    max-width: 30em;
+}
+
+a {
+    color: #202020;
+    text-decoration: none;
+}
+
+legend {
+    color: #00d66c;
+    font-size: 2.375em;
+}
+
+
+/* custom margin */
+
+h2,
+h5 {
+    margin: 0.5em;
+}
+
+h3 {
+    margin: 0.5em;
+    text-align: center;
+    width: 100%;
+}
+
+h4 {
+    margin-top: 0;
+}
+
+
+/* navigation */
+
+header {
+    align-items: center;
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+    height: 2.75em;
+}
+
+header img {
+    height: 1.5em;
+    padding-left: 0.5em;
+    width: 1.5em;
+    vertical-align: middle;
+}
+
+nav ul {
+    list-style: none;
+}
+
+ul a {
+    color: #00d66c;
+    display: inline-block;
+    padding: 0.5em;
+    text-decoration: none;
+}
+
+ul a:hover {
+    color: #2800a0;
+    -webkit-transition: all 0.3s ease-out;
+    -moz-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+}
+
+ul li {
+    background-color: #fff;
+    display: inline-block;
+}
+
+
+/* submenu */
+
+ul ul:target {
+    display: block;
+    position: absolute;
+}
+
+ul ul {
+    display: none;
+    left: 0;
+    top: 2.5em;
+    padding: 0;
+    z-index: 1;
+    width: 100%;
+}
+
+ul ul li {
+    border-bottom: 0.063em solid #f2f2f2;
+    width: 100%;
+    padding: 1em 0;
+}
+
+ul ul li a {
+    color: #202020;
+}
+
+
+/* hamburger */
+
+#menu-toggle {
+    display: none;
+}
+
+nav>label {
+    display: none;
+}
+
+
+/* login formulier */
+
+.background-login {
+    background-attachment: fixed;
+    background-image: url(../img/link-hoang-31747.jpg);
+    background-size: cover;
+}
+
+.login-form {
+    background: linear-gradient(rgba(255, 255, 255, 0.5) 84%, #fff 84%), linear-gradient( #fff 24%, rgba(255, 255, 255, 0.5) 24%);
+    border-radius: 1.25em;
+    max-width: 25em;
+    padding: 1.5em;
+    margin: 1em;
+}
+
+.background-login main {
+    display: flex;
+    justify-content: center;
+}
+
+/* alle verhalen */
+
+aside {
+    background-color: #2800a0;
+    border-radius: 1.25em;
+    padding: 1.5em;
+    height: 2em;
+    margin-right: 1em;
+    margin-top: 1em;
+}
+
+/*achtergrond formulier */
+
+section:first-child {
+    background-image: url(../img/tumblr_o9nos4TyCw1unflglo1_500.jpg%20copy.png);
+    background-position: 50% 50%;
+    background-size: cover;
+    display: flex;
+    -webkit-flex-flow: row wrap;
+    justify-content: center;
+}
+
+section>h2 {
+    align-content: center;
+    color: #fff;
+    height: 200px;
+}
+
+main form {
+    background: linear-gradient(rgba(255, 255, 255, 0.5) 85%, #fff 85%), linear-gradient( #fff 27%, rgba(255, 255, 255, 0.5) 27%);
+    border-radius: 1.25em;
+    max-width: 25em;
+    padding: 1.5em;
+    margin: 1em;
+}
+
+fieldset {
+    border: none;
+    padding: 1.250em 0;
+}
+
+form>a {
+    color: #606060;
+    display: block;
+    text-decoration: underline;
+}
+
+input:focus,
+select:focus {
+    outline: none;
+    border: 0.063em solid #2800a0;
+}
+
+input,
+select {
+    border: 0.063em solid #91a3b7;
+    border-radius: 0.5rem;
+    color: #606060;
+    display: block;
+    font-family: Nexa light;
+    font-size: 0.75em;
+    margin: 10px 0;
+    padding: 10px 2px;
+    width: 100%;
+}
+
+select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+form button {
+    background-color: #ff3268;
+    border-radius: 1.25em;
+    border-style: none;
+    box-shadow: 0 0.125em #ca2b55;
+    color: #fff;
+    font-size: 1.000em;
+    margin: 0.625em 0;
+    padding: 0.4375em 1.5em;
+    text-align: center;
+    display: block;
+    margin: 0 auto;
+}
+
+form button:hover {
+    background-color: #ec658e;
+    -webkit-transition: all 0.3s ease-out;
+    -moz-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+}
+
+input:valid {
+    border: 0.063em solid #00d66c;
+}
+
+.login-form fieldset:valid button {
+    background-color: #00d66c;
+    box-shadow: 0 0.125em #00a66c;
+    transition: 2s;
+    transform: scale(1.2);
+}
+
+
+/* verhalen */
+
+section article {
+    background-color: #fff;
+    border-radius: 1.25em;
+    margin: 0.5em;
+    max-width: 25em;
+    padding: 1.250em;
+}
+
+section>article:hover {
+    background-size: cover;
+    transition: .8s ease;
+    background-position: 50% 50%;
+}
+
+section>article:nth-child(2):hover, section>article:nth-child(2):focus {
+    background-image: url(../img/overlay-88-07.png);
+}
+
+section>article:nth-child(3):hover, section>article:nth-child(3):focus {
+    background-image: url(../img/overlay-77.jpg);
+}
+
+section>article:nth-child(4):hover, section>article:nth-child(3):focus {
+    background-image: url(../img/overlay-58.png);
+}
+
+article>p:first-child {
+    margin: 0;
+}
+
+article>footer {
+    display: flex;
+    justify-content: space-between;
+}
+
+section {
+    background-color: #f2f2f2;
+    border-radius: 0;
+    padding: 1em;
+}
+
+section:nth-child(2) {
+    display: flex;
+    -webkit-flex-flow: row wrap;
+    justify-content: center;
+    background-color: #f2f2f2;
+}
+
+
+/* hulp bij het zoeken */
+
+div {
+    display: flex;
+    justify-content: center;
+}
+
+section:nth-child(3) {
+    background-color: #f3e5d8;
+    text-align: center;
+}
+
+section:nth-child(4) {
+    background-color: #fff;
+    text-align: center;
+}
+
+section:nth-child(3) p,
+section:nth-child(4) p {
+    text-align: left;
+    margin-top: 1em;
+}
+
+section:nth-child(4) h5 {
+    color: #00d66c;
+}
+
+section:nth-child(3) a[href="#"],
+section:nth-child(4) a[href="#"] {
+    background-color: #2800a0;
+    border-radius: 1.25em;
+    border-style: none;
+    box-shadow: 0 0.125em #120145;
+    color: #fff;
+    display: inline-block;
+    font-size: 1.000em;
+    margin: 0.625em 1.250em;
+    padding: 0.4375em 1.5em;
+    text-align: center;
+}
+
+section:nth-child(3) a[href="#"]:hover,
+section:nth-child(4) a[href="#"]:hover {
+    background-color: #4f409b;
+    -webkit-transition: all 0.3s ease-out;
+    -moz-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+}
+
+section>article>a:hover:last-child {
+    background-color: #ff3268;
+    border-radius: 1.25em;
+    border-style: none;
+    box-shadow: 0 0.125em #ca2b55;
+    color: #fff;
+    margin: 0.625em 0;
+    padding: 0.4375em 1.5em;
+    -webkit-transition: all 0.3s ease-out;
+    -moz-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+}
+
+
+/* footer */
+
+footer>a[href="#"] {
+    background-color: #00d66c;
+    border-radius: 50%;
+    width: 1.5em;
+    height: 1.5em;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0.5em;
+    box-shadow: 0 0.125em #00a66c;
+    color: #fff;
+    -webkit-transition: all 0.3s ease-out;
+    -moz-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+}
+
+footer:last-child {
+    background-color: #f2f2f2;
+    height: 2.5em;
+    width: 100%;
+    display: inline-block;
+}
+
+
+/* comments onder verhalen */
+
+main ul a {
+    padding: 0.5em 0;
+    display: block;
+}
+
+
+/* mediaquerys */
+
+@media screen and (min-width: 80em) {
+    section:nth-child(2) {
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: flex-start;
+        overflow-x: auto;
+    }
+    article {
+        flex: 0 0 auto;
+    }
+    section>article {
+        position: relative;
+        margin-top: 5em;
+    }
+    section>h3 {
+        position: absolute;
+    }
+    aside {
+        position: absolute;
+        left: 1em;
+    }
+}
+
+@media screen and (max-width: 50em) {
+    aside {
+        margin: 1em;
+        width: 25em;
+        order: 1;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 30em) {
+    ul {
+        display: none;
+        position: absolute;
+        opacity: 0;
+        visibility: hidden;
+    }
+    ul li {
+        padding: 1em 0;
+    }
+    ul ul {
+        display: none;
+        left: 0;
+        width: 100%;
+        visibility: visible;
+        opacity: 1;
+    }
+    ul ul:target {
+        position: relative;
+    }
+    li {
+        width: 100%;
+        display: inline-block;
+    }
+    #menu-toggle:checked~ul {
+        opacity: 1;
+        visibility: visible;
+        display: inline-block;
+        left: 0;
+        width: 100%;
+        margin-top: 0.5rem;
+        padding: 0;
+    }
+    nav>label {
+        background: linear-gradient(to bottom, #00d66c 0%, #00d66c 20%, transparent 20%, transparent 40%, #00d66c 40%, #00d66c 60%, transparent 60%, transparent 80%, #00d66c 80%, #00d66c 100%);
+        display: inline-block;
+        height: 15px;
+        width: 25px;
+        margin-right: 1em;
+    }
+    main form {
+        background: linear-gradient(rgba(255, 255, 255, 0.5) 86%, #fff 86%), linear-gradient( #fff 20%, rgba(255, 255, 255, 0.5) 20%);
+        border-radius: 1.25em;
+        max-width: 25em;
+        padding: 1.5em;
+        margin: 1em;
+    }
+}
