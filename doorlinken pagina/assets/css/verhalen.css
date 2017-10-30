@@ -1,0 +1,111 @@
+@font-face {
+    font-family: 'Silom';
+    src: url('../font/Silom.eot');
+    src: url('../font/Silom.eot?#iefix') format('embedded-opentype'), url('../font/Silom.woff') format('woff'), url('../font/Silom.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    box-sizing: border-box;
+}
+
+.onomatopee img {
+    height: 900px;
+    overflow-y: hidden;
+}
+
+.klumperbeven {
+    display: block;
+    background-color: black;
+}
+
+.passie {
+    background-color: #000;
+}
+
+.passie img {
+    background-image: url(../img/uitwerking-58-03.png);
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color: black;
+    margin-top: 4em;
+}
+
+.passie p {
+    font-family: Silom;
+    line-height: 1.5em;
+    padding: 4em;
+}
+
+@media screen and (max-width: 48em) {
+    .passie p {
+        padding: 1.25em;
+    }
+    .burger-shower {
+  display: none;
+}
+
+.burger-shower:checked ~ .burger-menu {
+  display: block;
+}
+
+.hamburger {
+  display:block;
+  width: 3.4em;
+  height: 2.4em;
+  line-height: .1em;
+  border: .1em solid #ddd;
+  padding: 0 .4em .4em;
+}
+
+.hamburger hr {
+  color: #ddd;
+  height: .1em;
+  border: 0;
+  background: #ddd;
+  /* border: none; */
+}
+
+.burger-menu {
+   display:none;
+}
+}
+
+@media screen and (max-width: 80em) {
+    .passie p {
+        padding: 2em;
+    }
+}
+
+main p {
+    color: white;
+    padding-top: 10em;
+    max-width: 100%;
+    column-count: 2;
+    column-width: 30em;
+}
+
+.rotate {
+    -webkit-transition-duration: 2s;
+    -moz-transition-duration: 2s;
+    -o-transition-duration: 2s;
+    transition-duration: 2s;
+    -webkit-transition-property: -webkit-transform;
+    -moz-transition-property: -moz-transform;
+    -o-transition-property: -o-transform;
+    transition-property: transform;
+    outline: 0;
+    width: 100%;
+}
+
+input[type=checkbox] {
+    display: none;
+}
+
+input[type=checkbox]:checked+label>img {
+    -webkit-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    transform: rotate(180deg);
+}
