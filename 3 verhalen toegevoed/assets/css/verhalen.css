@@ -1,0 +1,69 @@
+* {
+    padding: 0;
+    margin: 0;
+    border: none;
+}
+
+.onomatopee {
+    height: 850px;
+}
+
+.klumperbeven {
+    display: block;
+    background-color: black;
+}
+
+.passie {
+    background-color: black;
+    padding: 5em;
+}
+
+.passie img{
+    width: 1000px;
+    height: 800px;
+
+}
+
+/*.tooltip {
+    position: relative;
+    display: inline-block;
+}
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 100%;
+    background-color: black;
+    color: #fff;
+    position: relative;
+    top: 0;
+    margin-top: 7em;
+    z-index: 1;
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+    position: absolute;
+}
+*/
+.rotate {
+    -webkit-transition-duration: 2s;
+    -moz-transition-duration: 2s;
+    -o-transition-duration: 2s;
+    transition-duration: 2s;
+    -webkit-transition-property: -webkit-transform;
+    -moz-transition-property: -moz-transform;
+    -o-transition-property: -o-transform;
+    transition-property: transform;
+    outline: 0;
+    width: 100%;
+}
+
+input[type=checkbox] {
+    display: none;
+}
+
+input[type=checkbox]:checked+label>img {
+    -webkit-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    transform: rotate(180deg);
+}
