@@ -1,0 +1,189 @@
+@font-face {
+    font-family: 'Silom';
+    src: url('../font/Silom.eot');
+    src: url('../font/Silom.eot?#iefix') format('embedded-opentype'), url('../font/Silom.woff') format('woff'), url('../font/Silom.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    box-sizing: border-box;
+    font-size: 1em;
+    margin: 0 auto;
+}
+
+html {
+    box-sizing: border-box;
+    width: 100%;
+}
+
+.onomatopee {
+    position: relative;
+}
+
+.onomatopee img {
+    height: 800px;
+    position: relative;
+}
+
+.onomatopee div {
+    width: 1960px;
+    height: 800px;
+    background: url(../img/uitwerking-77-hover.png);
+    background-size: cover;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    transition-timing-function: all 0.5s ease;
+}
+
+.onomatopee div:hover {
+    opacity: 1;
+}
+
+.onomatopee {
+    overflow-y: hidden;
+    overflow-x: scroll;
+}
+
+.klumperbeven {
+    background-color: black;
+}
+
+.passie {
+    background-color: black;
+}
+
+.passie {
+    background-image: url(../img/uitwerking-58-desktoppng-04.png);
+    width: 100%;
+    padding:0;
+    margin:0;
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 4500px;
+}
+
+.rotate {
+    -webkit-transition-duration: 2s;
+    -moz-transition-duration: 2s;
+    -o-transition-duration: 2s;
+    transition-duration: 2s;
+    -webkit-transition-property: -webkit-transform;
+    -moz-transition-property: -moz-transform;
+    -o-transition-property: -o-transform;
+    transition-property: transform;
+    outline: 0;
+    width: 100%;
+}
+
+input[type=checkbox] {
+    display: none;
+}
+
+input[type=checkbox]:checked+label>img {
+    -webkit-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    transform: rotate(180deg);
+}
+
+@media screen and (max-width: 50em) {
+    .passie {
+        background-image: url(../img/uitwerking-58-desktop.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        width: 100%;
+        padding: 0;
+        margin: 0;
+        height: 1900px;
+    }
+    .rotate {
+        display: none;
+    }
+    .klumperbeven {
+        background-image: url(../img/klumperbeven-tablet.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        width: 100%;
+        padding: 0;
+        margin: 0;
+        height: 1900px;
+    }
+}
+
+@media screen and (max-width: 30em) {
+    .passie section {
+        background-image: url(../img/uitwerking%2058%20mobiel.png);
+        background-size: contain;
+        width: 100%;
+        padding: 0;
+        margin: 0;
+        height: 2300px;
+    }
+    .rotate {
+        display: none;
+    }
+    .klumperbeven {
+        background-image: url(../img/klumberbeven-mobiel.png);
+        background-size: contain;
+        width: 100%;
+        padding: 0;
+        margin: 0;
+        height: 1700px;
+    }
+}
+
+/* comments onder verhalen */
+
+footer ul a {
+    padding: 0.5em 0;
+    display: block;
+}
+
+footer li {
+    width: 100%;
+}
+
+footer li:nth-child(even) {
+    background-color: #f2f2f2;
+    padding: 1em;
+}
+
+footer li:nth-child(odd) {
+    padding: 1em;
+}
+
+footer ul {
+    display: block;
+    visibility: visible;
+    padding: 0;
+    margin: 0;
+}
+
+footer form {
+    background-color: #00d66c;
+    padding: 1em;
+}
+
+footer legend {
+    color: #fff;
+    font-size: 1.150em;
+}
+
+footer input {
+    width: auto;
+}
+
+footer label {
+    display: block;
+}
+
+texarea {
+    display: block;
+    width: auto;
+}
