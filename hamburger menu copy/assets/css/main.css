@@ -1,0 +1,331 @@
+@font-face {
+    font-family: "Nexa bold";
+    src: url('../font/NexaBold.eot');
+    src: url('../font/NexaBold.eot?#iefix') format('embedded-opentype'), url('../font/NexaBold.woff') format('woff'), url('../font/NexaBold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Nexa light";
+    src: url('../font/NexaLight.eot');
+    src: url('../font/NexaLight.eot?#iefix') format('embedded-opentype'), url('../font/NexaLight.woff') format('woff'), url('../font/NexaLight.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+body {
+    background-color: #fff;
+    color: #202020;
+    font-family: Nexa bold;
+    font-size: 1.000em;
+    margin: 0 auto;
+}
+
+.background-login {
+    background-attachment: fixed;
+    background-image: url(../img/link-hoang-31747.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+
+/* typography */
+
+h1 {
+    color: #00d66c;
+    font-size: 1em;
+}
+
+h2 {
+    color: #00d66c;
+    font-size: 2.375em;
+}
+
+h3 {
+    color: #00d66c;
+    font-size: 2.375em;
+}
+
+h4 {
+    color: #2800a0;
+    font-size: 1.150em;
+}
+
+h5 {
+    color: #2800a0;
+    font-size: 2.375em;
+    margin: auto;
+}
+
+p {
+    font-family: Nexa light;
+    max-width: 30em;
+    line-height: 1.2em;
+}
+
+a {
+    color: #202020;
+    text-decoration: none;
+}
+
+section>article>a:hover {
+    background-color: #ff3268;
+    border-radius: 1.25em;
+    border-style: none;
+    box-shadow: 0 0.125em #ca2b55;
+    color: #fff;
+    margin: 0.625em 0;
+    padding: 0.4375em 1.5em;
+    -webkit-transition: all 0.3s ease-out;
+    -moz-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+}
+
+
+/* navigation */
+
+header {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    background-color: #fff;
+    height: 2.5em;
+}
+
+header img {
+    width: 1.5em;
+    height: 1.5em;
+    display: inline-block;
+    padding-left: 0.5em;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+header>a,
+nav>a {
+    display: none;
+}
+
+ul a {
+    display: inline-block;
+    text-decoration: none;
+    padding: 0.5em;
+    color: #00d66c;
+}
+
+ul>li {
+    display: inline-block;
+    background-color: #fff;
+}
+
+
+/* submenu */
+
+ul ul:target {
+    position: absolute;
+    display: block;
+}
+
+ul ul {
+    position: absolute;
+    display: none;
+}
+
+ul ul li {
+    border-bottom: 1px solid #f2f2f2;
+}
+
+ul ul li a {
+    color: #202020;
+}
+
+
+/* formulier */
+
+
+/*achtergrond formulier*/
+
+section:first-child {
+    background-image: url(../img/tumblr_o9nos4TyCw1unflglo1_500.jpg%20copy.png);
+    background-position: 50% 50%;
+    background-size: cover;
+    padding-top: 1.250em;
+    display: flex;
+    justify-content: center;
+}
+
+form {
+    background: linear-gradient(rgba(255, 255, 255, 0.5) 85%, #fff 85%), linear-gradient( #fff 30%, rgba(255, 255, 255, 0.5) 30%);
+    border-radius: 1.25em;
+    padding: 1.5em;
+    max-width: 25em;
+}
+
+fieldset {
+    border: none;
+    padding: 1.250em 0;
+}
+
+form>a {
+    color: #606060;
+    display: block;
+    text-decoration: underline;
+}
+
+input,
+select {
+    border: 0.063em solid #91a3b7;
+    border-radius: .5rem;
+    color: #606060;
+    display: block;
+    font-family: Nexa light;
+    font-size: 0.75em;
+    margin: 10px 0;
+    padding: 10px 2px;
+    width: 100%;
+}
+
+form input:hover,
+select:hover {
+    border: 0.063em solid #2800a0;
+}
+
+
+/*weghalen van de arrows*/
+
+select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+form button {
+    background-color: #ff3268;
+    border-radius: 1.25em;
+    border-style: none;
+    box-shadow: 0 0.125em #ca2b55;
+    color: #fff;
+    display: block;
+    font-size: 1.000em;
+    margin: 0.625em 0;
+    padding: 0.4375em 1.5em;
+    text-align: center;
+}
+
+form button:hover {
+    background-color: #ec658e;
+    -webkit-transition: all 0.3s ease-out;
+    -moz-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+}
+
+
+/* verhalen */
+
+div {
+    display: flex;
+    justify-content: center;
+}
+
+article {
+    background-color: #fff;
+    border-radius: 1.25em;
+    margin: 0.5em;
+    max-width: 25em;
+    padding: 1.250em;
+}
+
+section {
+    background-color: #f2f2f2;
+    border-radius: 0;
+    padding: 1em;
+}
+
+section:nth-child(2) {
+    display: flex;
+    -webkit-flex-flow: row wrap;
+    justify-content: center;
+}
+
+section:nth-child(3) {
+    background-color: #f3e5d8;
+    text-align: center;
+}
+
+section:nth-child(4) {
+    background-color: #fff;
+    text-align: center;
+}
+
+section:nth-child(4) h5 {
+    color: #00d66c;
+}
+
+section>h3 {
+    text-align: center;
+    width: 100%;
+}
+
+section:nth-child(3) a[href="#"],
+section:nth-child(4) a[href="#"] {
+    background-color: #2800a0;
+    border-radius: 1.25em;
+    border-style: none;
+    box-shadow: 0 0.125em #120145;
+    color: #fff;
+    display: inline-block;
+    font-size: 1.000em;
+    margin: 0.625em 1.250em;
+    padding: 0.4375em 1.5em;
+    text-align: center;
+}
+
+section:nth-child(3) a[href="#"]:hover,
+section:nth-child(4) a[href="#"]:hover {
+    background-color: #4f409b;
+    -webkit-transition: all 0.3s ease-out;
+    -moz-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+}
+
+
+/* mediaquerys */
+
+@media screen and (min-width: 80em) {
+    section:nth-child(2) {
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: flex-start;
+        overflow-x: auto;
+    }
+    article {
+        flex: 0 0 auto;
+        margin-top: 7em;
+    }
+    section>h3 {
+        position: absolute;
+    }
+}
+
+@media screen and (max-width: 35em) {
+    nav {
+        display: none;
+    }
+    nav:target {
+        display: inline-block;
+        position: absolute;
+    }
+    header>a,
+    nav>a {
+        display: inline-block;
+        padding:1.25em;
+    }
+}
