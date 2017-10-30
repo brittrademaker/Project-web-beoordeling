@@ -1,0 +1,37 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+
+/* .trapezium {
+    border-bottom: 1020px solid #333;
+    border-left: 160px solid transparent;
+    width: 480px;
+    transform: rotate(90deg);
+    margin-left: 1600px;
+    position: absolute;
+}*/
+
+img {
+    display: block;
+    height: 850px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: absolute;
+}
+
+p {
+    position: relative;
+
+
+}
+
+div {
+ overflow: hidden;
+  text-align: justify;
+  -webkit-hyphens: manual;
+  -webkit-shape-inside: polygon(0px 0px, 0 300px, 300px 300px);
+
+}
