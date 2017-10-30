@@ -1,0 +1,214 @@
+@font-face {
+    font-family: 'Silom';
+    src: url('../font/Silom.eot');
+    src: url('../font/Silom.eot?#iefix') format('embedded-opentype'), url('../font/Silom.woff') format('woff'), url('../font/Silom.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    font-size: 1em;
+    margin: 0 auto;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+h3 {
+    margin: 0;
+}
+
+.onomatopee {
+    width: 2500px;
+    height: 750px;
+    background-image: url(../img/uitwerking-77-desktop.png);
+    background-size: cover;
+    overflow-y: hidden;
+    overflow-x: scroll;
+}
+
+.onomatopee:hover,
+.onomatopee:active {
+    background-image: url(../img/uitwerking-77-desktop-hover.png);
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    transition-timing-function: all 0.5s ease;
+}
+
+.klumperbeven {
+    background-color: black;
+}
+
+.passie {
+    background-color: black;
+}
+
+.passie {
+    background-image: url(../img/uitwerking-58-desktoppng-04.png);
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 4500px;
+}
+
+.rotate {
+    -webkit-transition-duration: 2s;
+    -moz-transition-duration: 2s;
+    -o-transition-duration: 2s;
+    transition-duration: 2s;
+    -webkit-transition-property: -webkit-transform;
+    -moz-transition-property: -moz-transform;
+    -o-transition-property: -o-transform;
+    transition-property: transform;
+    outline: 0;
+    width: 100%;
+}
+
+input[type=checkbox] {
+    display: none;
+}
+
+input[type=checkbox]:checked+label>img {
+    -webkit-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    transform: rotate(180deg);
+}
+
+label[for=rotate-mobile] {
+    display: none;
+}
+
+label[for=rotate-tablet] {
+    display: none;
+}
+
+@media screen and (max-width: 50em) {
+    .passie {
+        background-image: url(../img/uitwerking-58-desktop.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        width: 100%;
+        padding: 0;
+        margin: 0;
+        height: 1900px;
+    }
+    label[for=chkimage] {
+        display: none;
+    }
+    label[for=rotate-tablet] {
+        display: block;
+    }
+    label[for=rotate-mobile] {
+        display: none;
+    }
+    .onomatopee {
+        width: 2300px;
+        height: 750px;
+        background-image: url(../img/uitwerking-58-desktoppng-04.png);
+        background-size: cover;
+        overflow-y: hidden;
+        overflow-x: scroll;
+    }
+    .onomatopee:hover,
+    .onomatopee:active {
+        background-image: url(../img/uitwerking-77-tablet-hover.png);
+        -webkit-transition: all 0.5s ease-in-out;
+        -moz-transition: all 0.5s ease-in-out;
+        -o-transition: all 0.5s ease-in-out;
+        transition-timing-function: all 0.5s ease;
+    }
+}
+
+@media screen and (max-width: 30em) {
+    label[for=rotate-tablet] {
+        display: none;
+    }
+    label[for=rotate-mobile] {
+        display: block;
+    }
+    label[for=chkimage] {
+        display: none;
+    }
+    .passie {
+        background-image: url(../img/uitwerking%2058%20tablet.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        width: 100%;
+        height: 1500px;
+    }
+
+    .onomatopee {
+        width: 100%;
+        height: 2350px;
+        background-image: url(../img/uitwerking-77-mobile.png);
+        background-size: cover;
+        overflow-y: scroll;
+        overflow-x: none;
+    }
+    .onomatopee:hover,
+    .onomatopee:active {
+        background-image: url(../img/uitwerking-77-mobile-hover.png);
+        -webkit-transition: all 0.5s ease-in-out;
+        -moz-transition: all 0.5s ease-in-out;
+        -o-transition: all 0.5s ease-in-out;
+        transition-timing-function: all 0.5s ease;
+    }
+}
+
+
+/* comments onder verhalen */
+
+footer h3 {
+    width: auto;
+}
+
+footer ul a {
+    display: block;
+}
+
+footer li {
+    width: 98%;
+    box-sizing: border-box;
+}
+
+footer li:nth-child(even) {
+    background-color: #f2f2f2;
+    padding: 1em 0;
+}
+
+footer li:nth-child(odd) {
+    padding: 1em 0;
+}
+
+footer ul {
+    display: block;
+    padding: 0;
+    margin: 0;
+}
+
+footer form {
+    background-color: #00d66c;
+    padding: 1em;
+}
+
+footer legend {
+    color: #fff;
+    font-size: 1.150em;
+}
+
+footer input {
+    width: auto;
+}
+
+footer label {
+    display: block;
+}
+
+texarea {
+    display: block;
+    width: auto;
+}
