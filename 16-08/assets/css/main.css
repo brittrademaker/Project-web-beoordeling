@@ -1,0 +1,244 @@
+@font-face {
+    font-family: 'Nexa bold';
+    src: url('../font/NexaBold.eot');
+    src: url('../font/NexaBold.eot?#iefix') format('embedded-opentype'), url('../font/NexaBold.woff') format('woff'), url('../font/NexaBold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Nexa light';
+    src: url('../font/NexaLight.eot');
+    src: url('../font/NexaLight.eot?#iefix') format('embedded-opentype'), url('../font/NexaLight.woff') format('woff'), url('../font/NexaLight.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'transavicon';
+    src: url('../font/transavicon.eot');
+    src: url('../font/transavicon.eot?#iefix') format('embedded-opentype'), url('../font/transavicon.woff') format('woff'), url('../font/transavicon.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    background-color: #fff;
+    color: #202020;
+    font-family: Nexa bold;
+    font-size: 1.000em;
+    margin: 0 auto;
+}
+
+.background-login {
+    background-attachment: fixed;
+    background-image: url(../img/tropisch-eiland.jpg);
+    background-position: right;
+    background-size: cover;
+}
+
+.background-lijst {
+    background-color: #f3e5d8;
+}
+
+main>h1 {
+    padding: 20px;
+}
+
+
+/* typography */
+
+h1 {
+    color: #00d66c;
+    font-size: 2.375em;
+}
+
+h2 {
+    color: #2800a0;
+    font-size: 1.150em;
+}
+
+p {
+    font-family: Nexa light;
+}
+
+a {
+    color: #202020;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #ff3268;
+    text-decoration: underline;
+}
+
+footer {
+    color: #f2f2f2;
+    font-size: 0.750em;
+    padding: 10px;
+    text-align: right;
+}
+
+
+/* navigation */
+
+header {
+    background: #fff;
+    padding: 0.75em;
+}
+
+ul {
+    background-color: #fff;
+    color: #000;
+    display: block;
+    list-style-type: none;
+    margin: 0;
+    padding: 0.75em;
+}
+
+ul li {
+    font-family: Nexa bold;
+    padding: 20px;
+}
+
+nav {
+    display: none;
+}
+
+nav:target {
+    display: block;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+i {
+    color: #00d66c;
+}
+
+i:hover {
+    color: #2800a0;
+}
+
+
+/* formulier */
+
+aside {
+    background-image: url(../img/portugal.jpg);
+    background-size: cover;
+    padding: 20px 0;
+}
+
+form {
+    background: linear-gradient(rgba(255, 255, 255, 0.7) 92%, #fff 92%);
+    border-radius: 1.25em;
+    margin: 20px;
+}
+
+fieldset {
+    border: none;
+    margin: 0;
+    padding: 0;
+}
+
+form h1 {
+    padding: 20px;
+}
+
+legend {
+    background-color: white;
+    border-radius: 1.25em 1.25em 0 0;
+    margin-bottom: 20px;
+    padding: 0;
+    width: 100%;
+}
+
+label,
+select {
+    padding: 20px;
+}
+
+form input,
+select {
+    border: 1px solid #91a3b7;
+    border-radius: .5rem;
+    display: block;
+    margin: 10px 0 20px 20px;
+    padding: 10px 10px;
+    width: auto;
+    color: #606060;
+}
+
+select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+form input:hover,
+select:hover {
+    border: 1px solid #2800a0;
+}
+
+form button {
+    background-color: #ff3268;
+    border-radius: 1.25em;
+    border-style: none;
+    box-shadow: 0 0.125em #ca2b55;
+    color: #fff;
+    font-size: 16px;
+    margin: 20px;
+    padding: .4375em 1.5em;
+    text-align: center;
+    text-decoration: none;
+}
+
+form button:hover {
+    background-color: #ec658e;
+}
+
+
+/* verhalen */
+
+article {
+    background-color: #fff;
+    border-radius: 1.25em;
+    margin-bottom: 15px;
+    padding: 1.250em;
+}
+
+section {
+    background-color: #f2f2f2;
+    border-radius: 0;
+    padding: 20px;
+}
+
+section:nth-child(2) {
+    background-color: #fff;
+}
+
+section:nth-child(3) {
+    background-color: #f3e5d8;
+}
+
+
+/* verhalenlijst resultaten */
+
+hr {
+    border: 1px solid #f2f2f2;
+    margin: 0 20px;
+}
+
+a[href="overzichtspagina.html"] {
+    display: inline;
+    padding: 20px;
+}
+
+footer>a:first-child {
+    float: left;
+}
+
+footer>a:nth-child(2) {
+    float: right;
+}
