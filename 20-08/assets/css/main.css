@@ -1,0 +1,333 @@
+@font-face {
+    font-family: 'Nexa bold';
+    src: url('../font/NexaBold.eot');
+    src: url('../font/NexaBold.eot?#iefix') format('embedded-opentype'), url('../font/NexaBold.woff') format('woff'), url('../font/NexaBold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Nexa light';
+    src: url('../font/NexaLight.eot');
+    src: url('../font/NexaLight.eot?#iefix') format('embedded-opentype'), url('../font/NexaLight.woff') format('woff'), url('../font/NexaLight.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'transavicon';
+    src: url('../font/transavicon.eot');
+    src: url('../font/transavicon.eot?#iefix') format('embedded-opentype'), url('../font/transavicon.woff') format('woff'), url('../font/transavicon.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    background-color: #fff;
+    color: #202020;
+    font-family: Nexa bold;
+    font-size: 1.000em;
+    margin: 0 auto;
+}
+
+.background-login {
+    background-attachment: fixed;
+    background-image: url(../img/link-hoang-31747.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+
+/* typography */
+
+h1 {
+    color: #00d66c;
+    font-size: 2.375em;
+}
+
+.green-text {
+    color: #00d66c;
+}
+
+h2 {
+    color: #2800a0;
+    font-size: 1.150em;
+}
+
+h3 {
+    color: #2800a0;
+    font-size: 2.375em;
+}
+
+p {
+    font-family: Nexa light;
+    line-height: 1.2em;
+    max-width: 30em;
+}
+
+a {
+    color: #202020;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #ff3268;
+    text-decoration: underline;
+}
+
+footer {
+    background-color: #f2f2f2;
+    font-size: 0.750em;
+    text-align: right;
+}
+
+
+/* navigation */
+
+ul img {
+    width: 2em;
+    padding: 0.5em 1.25em;
+}
+
+ul a img {
+    padding-left: 0px;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+li {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 1em;
+    text-decoration: none;
+    float: right;
+}
+
+li a {
+    color: #00d66c;
+}
+
+ul ul {
+    display: none;
+    height: 5em;
+    overflow-y: auto;
+}
+
+ul ul li {
+    display: block;
+    width: 100%;
+    border-bottom: 1px solid #f2f2f2;
+}
+
+ul ul li a {
+    color: black;
+}
+
+ul ul:target {
+    display: block;
+    position: relative;
+    left: 0;
+    top: 0;
+}
+
+
+/* formulier */
+
+div,
+aside {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+aside {
+    background-image: url(../img/tumblr_o9nos4TyCw1unflglo1_500.jpg.png);
+    background-size: cover;
+    padding: 1.250em 0;
+    justify-content: center;
+}
+
+aside>form {
+    background: linear-gradient(rgba(255, 255, 255, 0.5) 85%, #fff 85%), linear-gradient( #fff 30%, rgba(255, 255, 255, 0.5) 30%);
+    ;
+    border-radius: 1.25em;
+    margin: 1.250em;
+    max-width: 25.66em;
+    padding: 20px;
+}
+
+form {
+    background: linear-gradient(rgba(255, 255, 255, 0.5) 83%, #fff 83%), linear-gradient( #fff 22%, rgba(255, 255, 255, 0.5) 22%);
+    border-radius: 1.25em;
+    margin: 1.250em;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+fieldset {
+    border: none;
+    padding: 1.250em 0;
+}
+
+form a {
+    color: #606060;
+    display: block;
+    text-decoration: underline;
+}
+
+input,
+select {
+    border: 0.063em solid #91a3b7;
+    border-radius: .5rem;
+    display: block;
+    color: #606060;
+    margin: 10px 0;
+    padding: 10px 2px;
+    font-size: 0.75em;
+    font-family: Nexa light;
+    width: 100%;
+}
+
+form input:hover,
+select:hover {
+    border: 0.063em solid #2800a0;
+}
+
+
+/*weghalen van de arrows*/
+
+select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+form button {
+    background-color: #ff3268;
+    border-radius: 1.25em;
+    border-style: none;
+    box-shadow: 0 0.125em #ca2b55;
+    color: #fff;
+    display: block;
+    font-size: 1.000em;
+    margin: 0.625em 0;
+    padding: .4375em 1.5em;
+    text-align: center;
+}
+
+form button:hover {
+    background-color: #ec658e;
+}
+
+
+/* verhalen */
+
+article {
+    background-color: #fff;
+    border-radius: 1.25em;
+    margin: 0.5em;
+    max-width: 19em;
+    padding: 1.250em;
+}
+
+
+/* tweede linkje naar rechts*/
+
+article a:nth-child(3) {
+    float: right;
+    padding-right: 0.5em;
+}
+
+section {
+    background-color: #f2f2f2;
+    border-radius: 0;
+    padding: 1.250em;
+}
+
+section:nth-child(2) {
+    background-color: #f3e5d8;
+    text-align: center;
+}
+
+section:nth-child(3) {
+    background-color: #fff;
+    text-align: center;
+}
+
+section:first-child {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-flow: row wrap;
+    justify-content: center;
+}
+
+section>h3 {
+    margin: 0.5em;
+}
+
+section>h1 {
+    text-align: center;
+    width: 100%;
+}
+
+section a[href="#"],
+a[href="downloads.html"] {
+    background-color: #2800a0;
+    border-radius: 1.25em;
+    border-style: none;
+    box-shadow: 0 0.125em #120145;
+    color: #fff;
+    display: inline-block;
+    font-size: 1.000em;
+    margin: 0.625em 1.250em;
+    padding: .4375em 1.5em;
+    text-align: center;
+}
+
+section a[href="#"]:hover,
+a[href="downloads.html"]:hover {
+    background-color: #4f409b;
+}
+
+@media screen and (min-width: 60em) {
+    section:first-child {
+        display: flex;
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        justify-content: flex-start;
+    }
+    article {
+        margin-top: 7em;
+        flex: 0 0 auto;
+    }
+    section>h1 {
+        position: absolute;
+    }
+}
+
+
+/* verhalenlijst resultaten */
+
+a[href="overzichtspagina.html"] {
+    display: inline;
+    padding: 1.250em;
+}
+
+footer>a:first-child {
+    float: left;
+}
+
+footer>a:nth-child(2) {
+    float: right;
+}
