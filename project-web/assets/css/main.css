@@ -20,11 +20,6 @@ body {
     font-family: Nexa bold;
     font-size: 1.000em;
     margin: 0 auto;
-    /* smooth transition */
-    transition: all .2s linear;
-    -o-transition: all .2s linear;
-    -moz-transition: all .2s linear;
-    -webkit-transition: all .2s linear;
 }
 
 
@@ -41,14 +36,14 @@ h1 {
 h2 {
     color: #fff;
     margin: 0.5em;
+    text-decoration: underline;
 }
 
 h3 {
     color: #00d66c;
     font-size: 2.375em;
-    margin-bottom: 1.5em;
     text-align: center;
-    width: 90%;
+    width: calc(100% - 2em);
 }
 
 h4 {
@@ -136,6 +131,7 @@ ul ul {
     background-color: #f2f2f2;
     display: none;
     left: 0;
+    margin:0;
     padding: 0;
     top: 2.5em;
     width: 100%;
@@ -143,10 +139,11 @@ ul ul {
 }
 
 ul ul li {
+    box-sizing: border-box;
     background-color: #ffff;
     margin: 1em;
-    padding: 1.25em 0;
-    width: 95%;
+    padding: 1.25em;
+    width: calc(100% - 2em);
 }
 
 ul ul li a {
@@ -185,6 +182,7 @@ ul ul li:nth-of-type(5) {
 ul ul li:nth-of-type(6) {
     background-color: transparent;
     border-right: none;
+    padding: 0.5em;
     text-align: center;
 }
 
@@ -201,12 +199,13 @@ ul ul li:hover {
 /* andere stijling voor profiel dropdown */
 
 ul li:last-child ul li:last-child {
+    background-color: transparent;
     border-right: none;
 }
 
 ul li:last-child ul li:active,
 ul li:last-child ul li:hover {
-    background-color: #fff;
+    background-color: transparent;
     background-image: none;
 }
 
@@ -243,23 +242,18 @@ ul ul li:nth-of-type(4):hover {
 
 ul ul li:nth-of-type(5):active,
 ul ul li:nth-of-type(5):hover {
-    background-color: #ff3268;
-}
-
-ul ul li:nth-of-type(6):active,
-ul ul li:nth-of-type(6):hover {
     background-image: none;
 }
 
-ul ul li:nth-of-type(6) a,
-ul ul li:nth-of-type(6) a {
+ul ul li:nth-of-type(5),
+ul ul li:nth-of-type(5) {
     background-color: transparent;
     border-right: none;
     color: #808080;
     text-align: center;
 }
 
-ul ul li:nth-of-type(6) a:hover {
+ul ul li:nth-of-type(5) a:hover {
     color: #ff3268;
 }
 
@@ -301,7 +295,7 @@ span {
     padding: 0.1875em 0.3125em;
     position: absolute;
     top: 0.25em;
-    transition: all 2s ease;
+    transition: all 0.7s ease;
 }
 
 
@@ -323,6 +317,8 @@ aside {
     background-attachment: fixed;
     background-image: url(../img/vacation-books.png);
     background-size: cover;
+    display: flex;
+    justify-content: center;
 }
 
 .login-form {
@@ -333,9 +329,61 @@ aside {
     padding: 1.5em;
 }
 
-.background-login main {
-    display: flex;
-    justify-content: center;
+.login-form fieldset:valid button {
+    background-color: #00d66c;
+    box-shadow: 0 0.125em #00a66c;
+    transform: scale(1.2);
+    transition: 2s;
+}
+
+input:focus,
+select:focus {
+    border: 0.0625em solid #2800a0;
+    outline: none;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    font-size: 1em;
+}
+
+input {
+    background-color: white;
+    font-size: 1em;
+}
+
+input:valid {
+    background-color: transparent;
+    border: none;
+    border-bottom: 0.0625em solid #2800a0;
+    border-radius: 0;
+    transition: all 1s ease-out;
+}
+
+input:valid:hover {
+    background-color: #fff;
+    border: 0.0625em solid #2800a0;
+    border-radius: 0.5rem;
+}
+
+input,
+select {
+    border: 0.0625em solid #91a3b7;
+    border-radius: 0.5rem;
+    color: #606060;
+    display: block;
+    font-family: Nexa light;
+    font-size: 0.75em;
+    margin: 0.625em 0;
+    padding: 0.625em 0.2em;
+    width: 100%;
+}
+
+select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
 }
 
 
@@ -381,9 +429,10 @@ fieldset div {
 
 fieldset div p {
     margin: 0.25em;
+    padding-bottom: 0.5em;
 }
 
-fieldset div p:nth-of-type(2){
+fieldset div p:nth-child(2) {
     margin-right: auto;
 }
 
@@ -397,81 +446,6 @@ label {
     display: block;
 }
 
-input:focus,
-select:focus {
-    border: 0.0625em solid #2800a0;
-    outline: none;
-}
-
-input[type="text"],
-input[type="email"],
-input[type="password"] {
-    font-size: 1em;
-}
-
-input {
-    background-color: white;
-    font-size: 1em;
-}
-
-input:valid {
-    background-color: transparent;
-    border: none;
-    border-bottom: 0.0625em solid #2800a0;
-    border-radius: 0;
-    transition: all 1s ease-out;
-}
-
-input:valid:hover {
-    background-color: #fff;
-    border: 0.0625em solid #2800a0;
-    border-radius: 0.5rem;
-}
-
-input,
-select {
-    border: 0.0625em solid #91a3b7;
-    border-radius: 0.5rem;
-    color: #606060;
-    display: block;
-    font-family: Nexa light;
-    font-size: 0.75em;
-    margin: 0.625em 0;
-    padding: 0.625em 0.125em;
-    width: 100%;
-}
-
-select {
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
-}
-
-form button {
-    background-color: #ff3268;
-    border-radius: 1.25em;
-    border-style: none;
-    box-shadow: 0 0.125em #ca2b55;
-    color: #fff;
-    display: block;
-    font-size: 1.000em;
-    margin: 0.5em auto;
-    padding: 0.4375em 1.5em;
-    text-align: center;
-}
-
-form button:hover {
-    background-color: #ec658e;
-    -webkit-transition: all 0.3s ease-out;
-    -moz-transition: all 0.3s ease-out;
-    -o-transition: all 0.3s ease-out;
-    transition: all 0.3s ease-out;
-}
-
-footer form button {
-    margin: 1em 0;
-}
-
 input[type=range] {
     -webkit-appearance: none;
     -moz-appearance: none;
@@ -480,6 +454,9 @@ input[type=range] {
     padding: 0;
     width: 100%;
 }
+
+
+/* Bron: https://www.w3schools.com/howto/howto_js_rangeslider.asp */
 
 input[type=range]:valid {
     border: 0;
@@ -518,11 +495,29 @@ input[type=range]::-webkit-slider-progress {
     background-color: #00d66c;
 }
 
-.login-form fieldset:valid button {
-    background-color: #00d66c;
-    box-shadow: 0 0.125em #00a66c;
-    transform: scale(1.2);
-    transition: 2s;
+form button {
+    background-color: #ff3268;
+    border-radius: 1.25em;
+    border-style: none;
+    box-shadow: 0 0.125em #ca2b55;
+    color: #fff;
+    display: block;
+    font-size: 1.000em;
+    margin: 0.5em auto;
+    padding: 0.4375em 1.5em;
+    text-align: center;
+}
+
+form button:hover {
+    background-color: #ec658e;
+    -webkit-transition: all 0.3s ease-out;
+    -moz-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+}
+
+footer form button {
+    margin: 1em 0;
 }
 
 
@@ -540,6 +535,36 @@ section:nth-child(2) {
     justify-content: center;
 }
 
+section:nth-child(2)>a {
+    padding-top: 6em;
+    position: absolute;
+    text-align: center;
+    width: 97%;
+}
+
+section:nth-child(2)>a:hover {
+    color: #ff3268;
+    -webkit-transition: all 0.3s ease-out;
+    -moz-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+}
+
+section:nth-child(2)>div {
+    align-self: flex-end;
+    display: flex;
+    position: absolute;
+}
+
+section:nth-child(2)>div p {
+    margin: 3em 2em 0em 2em;
+}
+
+section:nth-child(2)>div p:first-of-type {
+    font-family: Nexa bold;
+    text-decoration: underline;
+}
+
 section article {
     background-color: #fff;
     border-radius: 1.25em;
@@ -550,7 +575,9 @@ section article {
     padding: 1.250em;
 }
 
-section article a:last-child {
+section article>a:last-of-type {
+    margin-left: auto;
+    margin-right: auto;
     margin-top: auto;
 }
 
@@ -572,7 +599,7 @@ section>article:nth-child(3):active {
 }
 
 section>article:nth-child(4):hover,
-section>article:nth-child(3):active {
+section>article:nth-child(4):active {
     background-image: url(../img/overlay-58.png);
 }
 
@@ -637,38 +664,45 @@ section:nth-child(4) a[href="#"]:hover {
     transition: all 0.3s ease-out;
 }
 
-section>article>a:hover:last-child {
+section>article>a:hover:last-of-type {
     background-color: #ff3268;
     border-radius: 1.25em;
     border-style: none;
     box-shadow: 0 0.125em #ca2b55;
     color: #fff;
-    margin: 0.625em 0 auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
     padding: 0.4375em 1.5em;
-    -webkit-transition: all 0.3s ease-out;
-    -moz-transition: all 0.3s ease-out;
-    -o-transition: all 0.3s ease-out;
-    transition: all 0.3s ease-out;
+    -webkit-transition: all 0.5s ease-out;
+    -moz-transition: all 0.5s ease-out;
+    -o-transition: all 0.5s ease-out;
+    transition: all 0.5s ease-out;
 }
 
-section>article>a:focus {
+section>article>a:focus:last-of-type {
     border-bottom: 0.3125em solid #ff3268;
     color: #ff3268;
     display: block;
-    padding: 0.3125em;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+    text-align: center;
+    width: 100%;
 }
 
-section:nth-child(2)>a {
-    display: flex;
-    justify-content: center;
-    margin-top: 4em;
-    padding: 2em;
-    position: absolute;
-    width: 90%;
-}
-
-section:nth-child(2)>a:hover {
-    color: #ff3268;
+section>article>a:focus:hover:last-of-type,
+section>article>a:active:last-of-type {
+    background-color: #00d66c;
+    border-radius: 1.25em;
+    border-style: none;
+    box-shadow: 0 0.125em #00a66c;
+    color: #fff;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+    padding: 0.4375em 1.5em;
+    width: auto;
 }
 
 
@@ -713,8 +747,7 @@ footer:nth-child(3) {
         flex: 0 0 auto;
     }
     section>article {
-        margin: 8em 0.5em;
-        position: relative;
+        margin: 8em 0.5em 3em 0em;
     }
     h3 {
         position: absolute;
@@ -725,7 +758,16 @@ footer:nth-child(3) {
     }
 }
 
-@media screen and (max-width: 50em) {
+@media screen and (max-width: 80em) {
+    section>article:nth-last-of-type(2) {
+        margin: 0.5em 0.5em 3em 0.5em;
+    }
+    section>article:last-of-type {
+        margin: 0.5em 0.5em 3em 0.5em;
+    }
+}
+
+@media screen and (max-width: 60em) {
     aside {
         margin: 1em;
         order: 1;
@@ -733,7 +775,13 @@ footer:nth-child(3) {
         width: 25em;
     }
     section:nth-child(2)>a {
-        margin-top: 6.5em;
+        margin-top: 0;
+        padding-top: 8em;
+        position: absolute;
+        text-align: center;
+    }
+    section>article:last-of-type {
+        margin: 0.5em 0.5em 3em 0.5em;
     }
 }
 
@@ -757,8 +805,13 @@ footer:nth-child(3) {
         visibility: visible;
         width: 100%;
     }
-    nav ul ul:target {
-        position: relative;
+    ul ul:target,
+    .zichtbaar {
+        display: block;
+        position: static;
+    }
+    nav ul ul:nth-of-type(2) {
+        top: 120px;
     }
     li {
         display: inline-block;
@@ -790,6 +843,11 @@ footer:nth-child(3) {
         color: transparent;
     }
     section:nth-child(2)>a {
-        margin-top: 9em;
+        padding-top: 10.5em;
+        position: absolute;
+        text-align: center;
+    }
+    section>article:last-of-type {
+        margin: 0.5em 0.5em 3em 0em;
     }
 }

@@ -390,7 +390,7 @@ main {
     display: none;
 }
 
-.passie>div:last-child {
+.passie>div:last-of-type {
     background-color: #fff;
 }
 
@@ -417,6 +417,7 @@ div .onomatopee {
     width: 156.25em;
 }
 
+div .onomatopee:hover,
 div .onomatopee:active {
     background-image: url(../img/uitwerking-77-desktop-hover.png);
     -webkit-transition: all 0.5s ease-in-out;
@@ -473,32 +474,24 @@ label[for=rotate-tablet] {
     display: none;
 }
 
-nav ul li:nth-of-type(2) div {
+nav ul li:nth-of-type(2) div{
     background-image: url(../img/like.png);
     background-repeat: no-repeat;
     background-size: contain;
     height: 2em;
     margin-top: 1.5em;
+    position: absolute;
     width: 2em;
 }
 
-nav ul li:nth-of-type(2) div:hover {
+nav ul li:nth-of-type(2) div:hover,
+nav ul li:nth-of-type(2) div:active{
     background-image: url(../img/liked.png);
     -webkit-transition: all 1s ease-out;
     -moz-transition: all 1s ease-out;
     -o-transition: all 1s ease-out;
     transition: all 1s ease-out;
 }
-
-.liked {
-    background-image: url(../img/liked.png);
-    background-repeat: no-repeat;
-    background-size: contain;
-    height: 2em;
-    margin-top: 1.5em;
-    width: 2em;
-}
-
 
 /* comments onder verhalen */
 
@@ -522,13 +515,12 @@ div article:nth-child(even) {
 }
 
 div form {
-    background-color: #00d66c;
+    background-color: #f3e5d8;
     padding: 1em;
 }
 
 div legend {
-    color: #fff;
-    font-size: 1.150em;
+    font-size: 1.8em;
 }
 
 div input {
@@ -560,7 +552,8 @@ legend {
 }
 
 input:focus,
-select:focus {
+select:focus,
+textarea:focus {
     border: 0.063em solid #2800a0;
     outline: none;
 }
@@ -595,6 +588,30 @@ select {
     margin: 0.625em 0;
     padding: 0.625em 0.125em;
     width: 100%;
+}
+
+input,
+select {
+    border: 0.063em solid #91a3b7;
+    border-radius: 0.5rem;
+    color: #606060;
+    display: block;
+    font-family: Nexa light;
+    font-size: 0.75em;
+    margin: 0.625em 0;
+    padding: 0.625em 0.125em;
+    width: 100%;
+}
+
+textarea {
+    border: 0.063em solid #91a3b7;
+    border-radius: 0.5rem;
+    color: #606060;
+    display: block;
+    font-family: Nexa light;
+    font-size: 0.75em;
+    margin: 0.625em 0;
+    padding: 0.625em 0.125em;
 }
 
 select {
@@ -677,12 +694,15 @@ footer:last-child {
         overflow-y: hidden;
         width: 110em;
     }
+    div .onomatopee:hover,
     div .onomatopee:active {
         background-image: url(../img/uitwerking-77-tablet-hover.png);
-        -webkit-transition: all 0.5s ease-in-out;
-        -moz-transition: all 0.5s ease-in-out;
-        -o-transition: all 0.5s ease-in-out;
-        transition-timing-function: all 0.5s ease;
+        height: 45em;
+        -webkit-transition: all 0.3s ease-in-out;
+        -moz-transition: all 0.3s ease-in-out;
+        -o-transition: all 0.3s ease-in-out;
+        transition-timing-function: all 0.3s ease;
+        width: 110em;
     }
     /* stijloegening 88 Klumperbeven */
     .klumperbeven>img:first-of-type {
@@ -735,13 +755,18 @@ footer:last-child {
         overflow-y: scroll;
         width: 100%;
     }
-    div .onomatopee:active,
-    div .onomatopee:hover {
+    div .onomatopee:hover,
+    div .onomatopee:active {
         background-image: url(../img/uitwerking-77-mobiel-hover.png);
+        background-size: cover;
+        height: 146.875em;
+        overflow-x: none;
+        overflow-y: scroll;
         -webkit-transition: all 0.5s ease-in-out;
         -moz-transition: all 0.5s ease-in-out;
         -o-transition: all 0.5s ease-in-out;
         transition-timing-function: all 0.5s ease;
+        width: 100%;
     }
     /* stijloegening 88 Klumperbeven */
     .klumperbeven>img:last-child {
@@ -811,5 +836,16 @@ footer:last-child {
     header ul ul li:active a,
     header ul ul li:hover a {
         color: transparent;
+    }
+
+    nav ul ul li{
+        width: 90%;
+    }
+
+    div nav ul {
+        display: flex;
+        justify-content: space-between;
+        margin: 0;
+        padding: 0;
     }
 }

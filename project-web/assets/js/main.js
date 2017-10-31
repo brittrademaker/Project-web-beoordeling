@@ -6,6 +6,7 @@ var profielLink = document.querySelector('[href="#profiel"]');
 function show(e) {
     var dropDown = this.getAttribute("href");
     document.querySelector(dropDown).classList.toggle('zichtbaar');
+    //voorkomen naar volgende pagina gaan
     e.preventDefault();
 }
 
@@ -24,8 +25,7 @@ function addOne() {
 
 downloadButton.addEventListener('click', addOne);
 
-
-//silder filter micro interactie 2
+//silder filter micro interactie 2, bron: https://www.w3schools.com/howto/howto_js_rangeslider.asp
 var slide = document.getElementById('slide');
 var sliderTijd = document.getElementById('sliderAmount');
 
@@ -44,11 +44,22 @@ function opties() {
 
 editStatus.addEventListener('click', opties);
 
-//liken van een stijloefening
-var like = document.querySelector('nav ul li:nth-of-type(2) div');
 
-function toevoegenLike() {
-    like.classList.toggle('liked');
+//bewerken status verhaal micro interactie 3
+var rood = document.querySelector('li div');
+
+function groen() {
+    rood.classList.toggle('liked');
 }
 
-like.addEventListener('click', toevoegenLike);
+rood.addEventListener('click', groen);
+
+//download micro interactie 1
+var heartIcon = document.querySelector('li div');
+
+function like() {
+    heartIcon.classList.toggle('liked');
+}
+
+heartIcon.addEventListener('click', like);
+
