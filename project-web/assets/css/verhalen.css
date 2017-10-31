@@ -155,9 +155,10 @@ ul ul {
 
 ul ul li {
     background-color: #ffff;
+    box-sizing: border-box;
     margin: 1em;
-    padding: 1.25em 0;
-    width: 95%;
+    padding: 1.25em;
+    width: calc(100% - 2em);
 }
 
 ul ul li a {
@@ -190,10 +191,6 @@ ul ul li:nth-of-type(4) {
 }
 
 ul ul li:nth-of-type(5) {
-    border-right: 0.5625em solid #ff3268;
-}
-
-ul ul li:nth-of-type(6) {
     background-color: transparent;
     border-right: none;
     text-align: center;
@@ -285,65 +282,6 @@ nav>label {
     display: none;
 }
 
-
-/* micro interactie edit */
-
-.aan-het-lezen {
-    border-right: 0.563em solid #ff3268 !important;
-}
-
-.aan-het-lezen:hover {
-    background-color: #ff3268 !important;
-}
-
-ul ul li:nth-of-type(2):active,
-ul ul li:nth-of-type(2):hover {
-    background-color: #00d66c;
-}
-
-ul ul li:nth-of-type(3):active,
-ul ul li:nth-of-type(3):hover {
-    background-color: #ff3268;
-}
-
-ul ul li:nth-of-type(4):active,
-ul ul li:nth-of-type(4):hover {
-    background-color: #2800a0;
-}
-
-ul ul li:nth-of-type(5):active,
-ul ul li:nth-of-type(5):hover {
-    background-color: #ff3268;
-}
-
-ul ul li:nth-of-type(6):active,
-ul ul li:nth-of-type(6):hover {
-    background-image: none;
-}
-
-ul ul li:nth-of-type(6) a,
-ul ul li:nth-of-type(6) a {
-    background-color: transparent;
-    border-right: none;
-    color: #808080;
-    text-align: center;
-}
-
-ul ul li:nth-of-type(6) a:hover {
-    color: #ff3268;
-}
-
-
-/* hamburger */
-
-#menu-toggle {
-    display: none;
-}
-
-nav>label {
-    display: none;
-}
-
 div nav {
     background-color: #f2f2f2;
     padding: 0.125em;
@@ -358,6 +296,25 @@ div nav ul {
 
 div nav ul li {
     background-color: transparent;
+}
+
+nav ul li:nth-of-type(2) div {
+    background-image: url(../img/like.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 2em;
+    margin-top: 1.5em;
+    position: absolute;
+    width: 2em;
+}
+
+nav ul li:nth-of-type(2) div:hover,
+nav ul li:nth-of-type(2) div:active {
+    background-image: url(../img/liked.png);
+    -webkit-transition: all 1s ease-out;
+    -moz-transition: all 1s ease-out;
+    -o-transition: all 1s ease-out;
+    transition: all 1s ease-out;
 }
 
 
@@ -474,24 +431,6 @@ label[for=rotate-tablet] {
     display: none;
 }
 
-nav ul li:nth-of-type(2) div{
-    background-image: url(../img/like.png);
-    background-repeat: no-repeat;
-    background-size: contain;
-    height: 2em;
-    margin-top: 1.5em;
-    position: absolute;
-    width: 2em;
-}
-
-nav ul li:nth-of-type(2) div:hover,
-nav ul li:nth-of-type(2) div:active{
-    background-image: url(../img/liked.png);
-    -webkit-transition: all 1s ease-out;
-    -moz-transition: all 1s ease-out;
-    -o-transition: all 1s ease-out;
-    transition: all 1s ease-out;
-}
 
 /* comments onder verhalen */
 
@@ -827,7 +766,6 @@ footer:last-child {
     }
     header ul ul li:active,
     header ul ul li:hover {
-        background-image: url(../img/choices.png);
         background-position: 50%;
         background-repeat: no-repeat;
         background-size: contain;
@@ -837,11 +775,6 @@ footer:last-child {
     header ul ul li:hover a {
         color: transparent;
     }
-
-    nav ul ul li{
-        width: 90%;
-    }
-
     div nav ul {
         display: flex;
         justify-content: space-between;
