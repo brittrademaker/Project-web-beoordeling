@@ -6,7 +6,7 @@ var profielLink = document.querySelector('[href="#profiel"]');
 function show(e) {
     var dropDown = this.getAttribute("href");
     document.querySelector(dropDown).classList.toggle('zichtbaar');
-    //voorkomen naar volgende pagina gaan
+    //voorkomen naar een andere pagina gaan
     e.preventDefault();
 }
 
@@ -43,23 +43,3 @@ function opties() {
 }
 
 editStatus.addEventListener('click', opties);
-
-
-//bewerken status verhaal micro interactie 3
-var rood = document.querySelector('li div');
-
-function groen() {
-    rood.classList.toggle('liked');
-}
-
-rood.addEventListener('click', groen);
-
-//download micro interactie 1
-var heartIcon = document.querySelector('li div');
-
-function like() {
-    heartIcon.classList.toggle('liked');
-}
-
-heartIcon.addEventListener('click', like);
-
